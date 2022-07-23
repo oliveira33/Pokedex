@@ -38,19 +38,24 @@ body {
 
 .pokemonInput {
     position: absolute;
-    left: 21%;
+    left: 19.5%;
     top: 60%;
     width: 55%;
     height: 5%;
     text-align: end;
 }
 
-.pokemonInput > span {
-    background: red;
-    color: white;
+.pokemonName {
+    text-transform: capitalize;
+}
+
+.pokemonInput > span:last-child {
+    background: #F5AC78;
+    color: #9C531F;
     padding: 2px 10px;
-    border: 1px solid #555;
+    border: 1px solid #9C531F;
     font-size: 11px;
+    text-transform: capitalize;
 }
 
 .btn-previous {
