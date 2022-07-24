@@ -1,21 +1,33 @@
 var pokemonId = 6; //Charizard
-var pokemonSpriteSrc = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/';
+var clickNext = new Audio('Sons/next.wav');
+var clickPrevious = new Audio('Sons/previous.wav');
+var notAllow = new Audio('Sons/notAllow.wav');
+clickNext.volume = 0.5;
+clickPrevious.volume = 0.5;
 
 $('#btn-previous').click(async function() {
     if (pokemonId > 1) {
         pokemonId -= 1;
+        clickPrevious.play();
         var data = await getData(pokemonId);
         if (data)
             fillPokemonInformations(data);
+    }
+    else {
+        notAllow.play();
     }
 });
 
 $('#btn-next').click(async function() {
     if (pokemonId < 649) {
         pokemonId += 1;
+        clickNext.play();
         var data = await getData(pokemonId);
         if (data)
             fillPokemonInformations(data);
+    }
+    else {
+        notAllow.play();
     }
 });
 
