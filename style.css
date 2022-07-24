@@ -118,3 +118,9 @@ footer {
     background: #ffcf32;
     border-top: 3px solid #131cdb;
 }
+
+@media (max-width: 425px) {
+    .container {
+        transform: scale(0.7);
+    }
+}

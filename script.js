@@ -41,6 +41,12 @@ async function getData(id) {
 function fillPokemonInformations(data) {
     var generationV = data.sprites.versions["generation-v"];
     $('#pokemonImage').attr("src", generationV["black-white"].animated.front_default);
+    if (data.id == 50 || data.id == 51) { //Diglett or Dugtrio
+      $('.canvas').css("top", "33%");
+    }
+    else {
+      $('.canvas').css("top", "31%");
+    }
     $('#pokemonNumber').html('Nº' + pad(data.id, 3));
     $('#pokemonName').html(data.name);
     fillPokemonType(data);
