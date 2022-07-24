@@ -28,7 +28,6 @@ body {
     display: inline-block;
     padding-top: 30px;
     position: relative;
-    transform: translate(0, 10%);
 }
 
 .canvas {
@@ -119,8 +118,8 @@ footer {
     border-top: 3px solid #131cdb;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 600px) {
     .container {
-        transform: scale(0.7);
+        transform: scale(0.7) translateY(-130px);
     }
 }
