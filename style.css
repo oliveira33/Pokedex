@@ -120,6 +120,25 @@ footer {
 
 @media (max-width: 600px) {
     .container {
-        transform: scale(0.7) translateY(-130px);
+        transform: scale(0.7) translate(-8.5%, -130px);
+        width: 100vw;
+    }
+
+    .canvas {
+        transform: translate(14%, -2%);
+    }
+
+    .pokemonInput {
+        transform: translatex(20%);
+    }
+
+    .btn-previous {
+        transform: translatex(10%);
+        width: 25.5%;
+    }
+
+    .btn-next {
+        transform: translatex(21%);
+        width: 25.5%;
     }
 }
