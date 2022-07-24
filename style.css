@@ -127,7 +127,7 @@ footer {
     }
 
     .cabecalho > img:first-child {
-        max-width: fit-content;
+        max-width: 155px;
     }
 
     .container {
