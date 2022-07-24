@@ -12,19 +12,30 @@
     <title>Pokedéx - by Gustavo Oliveira</title>
 </head>
 <body>
-    <div class="container">
-        <div class="canvas">
-            <img id="pokemonImage" class="pokemonImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="">
+    <header>
+        <div class="cabecalho">
+            <img src="Imagens/logo.png" alt="logo">
+            <img src="Imagens/4tym.gif" alt="pikachu">
         </div>
-        <div class="pokemonInput">
-            <span id="pokemonNumber">Nº006</span> - <span id="pokemonName" class="pokemonName">Charizard</span><br>
-            Type: <span id="pokemonType">Fire</span>
+    </header>
+    <main>
+        <div class="container">
+            <div class="canvas">
+                <img id="pokemonImage" class="pokemonImage" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" alt="">
+            </div>
+            <div class="pokemonInput">
+                <span id="pokemonNumber">Nº006</span> - <span id="pokemonName" class="pokemonName">Charizard</span><br>
+                Type: <span id="pokemonType">Fire</span>
+            </div>
+            <button id="btn-previous" class="btn-previous">Previous</button>
+            <button id="btn-next" class="btn-next">Next</button>
+            <img class="pokedex" src="Imagens/pokedex.png" alt="pokedex">
         </div>
-        <button id="btn-previous" class="btn-previous">Previous</button>
-        <button id="btn-next" class="btn-next">Next</button>
-        <img class="pokedex" src="Imagens/pokedex.png" alt="pokedex">
-    </div>
-
+    </main>
+    <footer>
+        By Gustavo Oliveira
+    </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>
