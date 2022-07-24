@@ -103,7 +103,7 @@ body {
 }
 
 .pokedex {
-    max-width: 480px;
+    width: 100%;
 }
 
 footer {
@@ -120,26 +120,8 @@ footer {
 
 @media (max-width: 600px) {
     .container {
-        transform: scale(0.8) translate(-8.5%, -80px);
-        width: 100vw;
-    }
-
-    .canvas {
-        transform: translateY(-2%);
-        left: 24%;
-    }
-
-    .pokemonInput {
-        left: 33%;
-    }
-
-    .btn-previous {
-        left: 14%;
-        width: 25.5%;
-    }
-
-    .btn-next {
-        left: 40%;
-        width: 25.5%;
+        max-width: 400px;
+        min-width: 200px;
+        transform: scale(1);
     }
 }
