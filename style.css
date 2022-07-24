@@ -119,6 +119,17 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        padding: 5px 10px;
+    }
+
+    .cabecalho > img:first-child {
+        max-width: fit-content;
+    }
+
     .container {
         max-width: 400px;
         min-width: 200px;
