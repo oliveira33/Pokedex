@@ -119,30 +119,27 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .cabecalho:first-child {
-        width: 100%;
-    }
-
     .container {
         transform: scale(0.8) translate(-8.5%, -80px);
         width: 100vw;
     }
 
     .canvas {
-        transform: translate(14%, -2%);
+        transform: translateY(-2%);
+        left: 24%;
     }
 
     .pokemonInput {
-        transform: translatex(20%);
+        left: 33%;
     }
 
     .btn-previous {
-        transform: translatex(10%);
+        left: 14%;
         width: 25.5%;
     }
 
     .btn-next {
-        transform: translatex(21%);
+        left: 40%;
         width: 25.5%;
     }
 }
